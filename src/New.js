@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { Link } from 'react-router-dom';
+// import { withRouter } from 'react-router-dom'; 
 
 class New extends React.Component {
     constructor(props) {
@@ -21,7 +21,8 @@ class New extends React.Component {
       };
 
     handleSubmit = event => {
-        event.preventDefault()
+        event.preventDefault();
+        this.props.history.push('/');
         fetch('http://localhost:4000/posts', {
           method: "POST",
           headers: {
@@ -47,7 +48,7 @@ class New extends React.Component {
               <input type="text" id="header" value={this.state.header} onChange={this.handleChange} maxLength="50" required />
               <label htmlFor="body">Your Story:</label>
               <textarea type="text" id="story" value={this.state.story} onChange={this.handleChange} cols="30" rows="10" maxLength="500" required />
-              <button>Post Your Story</button>
+              <button redirect to='/' >Post Your Story</button>
             </form>
           </div>
         

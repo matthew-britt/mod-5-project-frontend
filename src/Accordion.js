@@ -3,11 +3,12 @@ import "./accordion.css";
 import Chevron from './Chevron';
 // import Accordion from 'react-bootstrap/Accordion';
 
-function Accordion(props) {
+const Accordion = (props) => {
     const [setActive, setActiveState] = useState("");
     const [setHeight, setHeightState] = useState("0px");
     const [setRotate, setRotateState] = useState("accordion__icon");
     const content = useRef(null);
+    const [count, setCount] = useState(0);
 
     function toggleAccordion() {
         setActiveState(setActive === "" ? "active" : "");
@@ -22,20 +23,24 @@ function Accordion(props) {
     return (
         <div>
 
-        {console.log(props)}
             <div className="accordion__section">
                 <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
                     <div className="post">
                         <div className="votes">
-                            <div className="upvote" >
+                            <div className="upvote" onClick={() => setCount(count + 1)}>
                                 <span role="img" aria-label="up vote">
                                     ⬆️
                                 </span>
                             </div>
                             <div className="votecount"></div>
-                            <div className="downvote" >
+                            <div className="downvote" onClick={() => setCount(count - 1)}>
                                 <span role="img" aria-label="down vote">
                                     ⬇️
+                                </span>
+                            </div>
+                            <div className="downvote" >
+                                <span role="img" aria-label="down vote">
+                                    {count}
                                 </span>
                             </div>
                         </div>

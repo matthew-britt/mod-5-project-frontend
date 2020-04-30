@@ -1,12 +1,11 @@
 import React from 'react';
 import Accordion from './Accordion';
-import New from './New';
 
 class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            posts: []
+            posts: [],
         };
     };
 

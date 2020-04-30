@@ -1,0 +1,33 @@
+.post-box,
+.guest-msg {
+  padding: 10px 20px;
+}
+
+.post-box {
+  background: #1E90FF;
+  border-radius: 3px;
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.guest-msg {
+  background: #fffde7;
+  font-weight: bold;
+}
+
+.post-form input,
+.post-form textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: gray;
+}

@@ -20,21 +20,40 @@ function Accordion(props) {
     };
 
     return (
-        <div className="accordion__section">
-            <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-                <p className="accordion__title"> {props.posts.map(post => post.header)} </p>
-                <Chevron className={`${setRotate}`} width={20} fill={"#FFFFFF"} />
-            </button>
-            <div
-                ref={content}
-                style={{ maxHeight: `${setHeight}` }}
-                className="accordion__content"
-            >
-                <p className="author">Author: {props.posts.map(post => post.user)}</p>
+        <div>
+
+        {console.log(props)}
+            <div className="accordion__section">
+                <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
+                    <div className="post">
+                        <div className="votes">
+                            <div className="upvote" >
+                                <span role="img" aria-label="up vote">
+                                    ⬆️
+                                </span>
+                            </div>
+                            <div className="votecount"></div>
+                            <div className="downvote" >
+                                <span role="img" aria-label="down vote">
+                                    ⬇️
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="accordion__title" > {props.header} </p>
+                    <Chevron className={`${setRotate}`} width={20} fill={"#FFFFFF"} />
+                </button>
                 <div
-                    className="accordion__text"
-                    dangerouslySetInnerHTML={{ __html: props.posts.map(post => post.story) }}
-                />
+                    ref={content}
+                    style={{ maxHeight: `${setHeight}` }}
+                    className="accordion__content"
+                >
+                    <p className="author">Author: {props.user}</p>
+                    <div
+                        className="accordion__text"
+                        dangerouslySetInnerHTML={{ __html: props.story }}
+                    />
+                </div>
             </div>
         </div>
     );

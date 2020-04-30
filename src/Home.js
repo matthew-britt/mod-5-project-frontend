@@ -1,5 +1,6 @@
 import React from 'react';
 import Accordion from './Accordion';
+import New from './New';
 
 class Home extends React.Component {
     constructor(props) {
@@ -19,10 +20,14 @@ class Home extends React.Component {
             .then(posts => this.setState({posts}))
     };
 
+    // addPost = (post) => {
+    //     this.setState({ posts: [...this.state.posts, post] })
+    //   }
+
     render() {
         return (
             <div>
-                {this.state.posts.map (acc => <Accordion posts={this.state.posts} key={acc.id} /> )}
+                {this.state.posts.map (post => <Accordion header={post.header} story={post.story} user={post.user_id} key={post.id} /> )}
             </div>
         )
     };

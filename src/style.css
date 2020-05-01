@@ -31,3 +31,17 @@
   font-size: 0.8rem;
   color: gray;
 }
+
+.header {
+  font-family: "Courier";
+  font-weight: 600;
+  font-size: 50px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+img {
+ width: 45%;
+ margin-top: 50px;
+  /* float: right; */
+}

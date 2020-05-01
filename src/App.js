@@ -6,6 +6,7 @@ import Login from './Login';
 import New from './New';
 import History from './History';
 import { Switch, Route } from 'react-router-dom';
+import Header from './Header'
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
         </div>
           
         <Nav />
+        <Header />
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/login" component={Login}/>

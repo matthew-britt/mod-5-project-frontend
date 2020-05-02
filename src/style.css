@@ -33,7 +33,7 @@
 }
 
 .header {
-  font-family: "Courier";
+  font-family: "Courier New";
   font-weight: 600;
   font-size: 50px;
   margin-left: 10px;
@@ -48,4 +48,28 @@ img {
 
 #burn {
   display: block; margin-left: auto; margin-right: auto
+}
+
+.post-box {
+  font-family: "Courier New";
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+.login {
+  font-family: "Courier New";
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  background: #1E90FF;
+  border-radius: 3px;
+  width: 50%;
+  font-family: "Courier New";
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px 20px;
 }

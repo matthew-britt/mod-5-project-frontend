@@ -37,9 +37,10 @@ const Accordion = (props) => {
                     >
                     <p className="author">Author: {props.user}</p>
                     <div
-                        className="accordion__text"
-                        dangerouslySetInnerHTML={{ __html: props.story }}
-                        />
+                        className="accordion__text" cols="30">
+                        {/* // dangerouslySetInnerHTML={{ __html: props.story }} */}
+                        <p> {props.story}</p>
+                    </div>
                         <Arrow/>
                         <button onClick={() => props.deletePost(props.id)} >Delete </button>
                 </div>

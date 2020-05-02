@@ -42,12 +42,13 @@ class New extends React.Component {
         return (           
                 
             <div className="post-box">
-            <h4>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way."<br></br> -Michael Scott</h4>
+            <h4>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way."</h4> 
+            {/* -Michael Scott  */}
             <form className="post-form" onSubmit={this.handleSubmit} >
               <label htmlFor="title">Your Title:</label>
               <input type="text" id="header" value={this.state.header} onChange={this.handleChange} maxLength="50" required />
               <label htmlFor="body">Your Story:</label>
-              <textarea type="text" id="story" value={this.state.story} onChange={this.handleChange} cols="30" rows="10" maxLength="500" required />
+              <textarea type="text" id="story" value={this.state.story} onChange={this.handleChange} cols="30" rows="10" maxLength="2000" required />
               <button redirect to='/' >Post Your Story</button>
             </form>
           </div>

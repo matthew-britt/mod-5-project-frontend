@@ -9,7 +9,6 @@ const Accordion = (props) => {
     const [setHeight, setHeightState] = useState("0px");
     const [setRotate, setRotateState] = useState("accordion__icon");
     const content = useRef(null);
-    const [count, setCount] = useState(0);
 
     function toggleAccordion() {
         setActiveState(setActive === "" ? "active" : "");
@@ -28,7 +27,7 @@ const Accordion = (props) => {
                 <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
                     <div className="post">
                     </div>
-                    <p className="accordion__title" > {props.header} </p>
+                    <p className="accordion__title" > {props.header}  </p>
                     <Chevron className={`${setRotate}`} width={20} fill={"#FFFFFF"} />
                 </button>
                 <div
@@ -42,6 +41,7 @@ const Accordion = (props) => {
                         dangerouslySetInnerHTML={{ __html: props.story }}
                         />
                         <Arrow/>
+                        <button onClick={() => props.deletePost(props.id)} >Delete </button>
                 </div>
             </div>
         </div>

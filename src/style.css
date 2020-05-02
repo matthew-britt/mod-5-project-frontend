@@ -45,3 +45,7 @@ img {
  margin-top: 50px;
   /* float: right; */
 }
+
+#burn {
+  display: block; margin-left: auto; margin-right: auto
+}

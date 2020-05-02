@@ -7,6 +7,7 @@ import New from './New';
 import History from './History';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header'
+import Footer from './Footer'
 
 class App extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
           <Route exact path="/history" component={History}/>          
           
         </Switch>
+        <Footer />
       </div>
     )
   }

@@ -33,7 +33,7 @@
 .accordion__title {
   font-family: "Courier New";
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 10px;
 }
 
@@ -55,17 +55,18 @@
   background-color: white;
   overflow: hidden;
   transition: max-height 0.5s ease;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-family: "Courier New", bold;
+  font-weight: 600;
+  font-size: 18px;
   padding: 18px;
+  margin-left: 20px;
   
 }
 
 /* Style the accordion content text */
 .accordion__text {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-family: "Courier New";
+  font-weight: 600;
+  font-size: 18px;
   padding: 18px;
 }

@@ -42,8 +42,8 @@ class New extends React.Component {
         return (           
                 
             <div className="post-box">
-            <h4>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way."</h4> 
-            {/* -Michael Scott  */}
+            <h4>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way."  <br></br>-Michael Scott </h4>
+           
             <form className="post-form" onSubmit={this.handleSubmit} >
               <label htmlFor="title">Your Title:</label>
               <input type="text" id="header" value={this.state.header} onChange={this.handleChange} maxLength="50" required />

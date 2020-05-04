@@ -1,5 +1,6 @@
 import React from 'react';
 import Accordion from './Accordion';
+import Login from './Login'
 
 class Home extends React.Component {
     constructor(props) {
@@ -43,7 +44,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                {this.state.posts.map (post => <Accordion header={post.header} story={post.story} id={post.id} user={post.user_id} deletePost={this.deletePost}/> )}
+                {this.state.posts.map (post => <Accordion header={post.header} story={post.story} id={post.id} username={post.username} deletePost={this.deletePost}/> )}
             </div>
         )
     };

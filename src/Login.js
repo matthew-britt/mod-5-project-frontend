@@ -30,7 +30,7 @@ class Login extends React.Component {
           body: JSON.stringify(this.state)
         })
         .then(resp => resp.json())
-        .then(user => {console.log(user)});
+        .then(user => window.alert("It's Britney bitch."));
         //   event.target.reset();
         // console.log(this.state)
     };

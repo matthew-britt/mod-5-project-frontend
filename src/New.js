@@ -7,6 +7,7 @@ class New extends React.Component {
         super(props);
         this.state = {
             header: "",
+            username: "",
             story: "",
             user_id: 1
         };
@@ -47,6 +48,8 @@ class New extends React.Component {
             <form className="post-form" onSubmit={this.handleSubmit} >
               <label htmlFor="title">Your Title:</label>
               <input type="text" id="header" value={this.state.header} onChange={this.handleChange} maxLength="50" required />
+              <label htmlFor="title">Your Name:</label>
+              <input type="text" id="username" value={this.state.username} onChange={this.handleChange} maxLength="50" required />
               <label htmlFor="body">Your Story:</label>
               <textarea type="text" id="story" value={this.state.story} onChange={this.handleChange} cols="30" rows="10" maxLength="2000" required />
               <button redirect to='/' >Post Your Story</button>

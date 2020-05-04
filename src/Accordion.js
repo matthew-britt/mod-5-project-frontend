@@ -35,7 +35,7 @@ const Accordion = (props) => {
                     style={{ maxHeight: `${setHeight}` }}
                     className="accordion__content"
                     >
-                    <p className="author">Author: {props.user}</p>
+                    <p className="author">Author: {props.username}</p>
                     <div
                         className="accordion__text" cols="30">
                         {/* // dangerouslySetInnerHTML={{ __html: props.story }} */}

@@ -5,22 +5,22 @@ import './navbar.css';
 class Nav extends React.Component {
     render() {
         return (
-            <div className='nav'>
+            <div className='nav' >
 
-                | 
-                <Link to="/">Home</Link>| 
+                <Link style={{ color: '#FFF' }} to="/">Home</Link >|
 
-                
-                <Link to="/login">Login</Link>| 
 
-                
-                <Link to="/new">New Post</Link>| 
+                <Link style={{ color: '#FFF' }} to="/login">Login</Link>|
 
-                
-                <Link to="/history">History</Link>|
-                
+
+                <Link style={{ color: '#FFF' }} to="/new">New Post</Link>|
+
+
+                <Link style={{ color: '#FFF' }} to="/history">History</Link>
+
+               
+
             </div>
-
         );
     };
 };

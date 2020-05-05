@@ -6,8 +6,9 @@ import Login from './Login';
 import New from './New';
 import History from './History';
 import { Switch, Route } from 'react-router-dom';
-import Header from './Header'
-import Footer from './Footer'
+import Header from './Header';
+import Footer from './Footer';
+import Menu from './Menu';
 
 class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class App extends React.Component {
         </div>
           
         <Nav />
+        {/* <Menu /> */}
         <Header />
         <Switch>
           <Route exact path="/" component={Home}/>

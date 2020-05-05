@@ -1,6 +1,5 @@
 import React from 'react';
 import Accordion from './Accordion';
-import Login from './Login'
 
 class Home extends React.Component {
     constructor(props) {

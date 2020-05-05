@@ -7,8 +7,8 @@ class New extends React.Component {
         super(props);
         this.state = {
             header: "",
-            username: "",
             story: "",
+            username: "",
             user_id: 1
         };
     };

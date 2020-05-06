@@ -7,16 +7,16 @@ class Nav extends React.Component {
         return (
             <div className='nav' >
 
-                <Link style={{ color: '#FFF' }} to="/">Home</Link >|
+                <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/">Home</Link >|
 
 
-                <Link style={{ color: '#FFF' }} to="/login">Login</Link>|
+                <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/login">Login</Link>|
 
 
-                <Link style={{ color: '#FFF' }} to="/new">New Post</Link>|
+                <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/new">New Post</Link>|
 
 
-                <Link style={{ color: '#FFF' }} to="/history">History</Link>
+                <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/history">History</Link>
 
                
 

@@ -57,7 +57,7 @@
   transition: max-height 0.5s ease;
   font-family: "Courier New", bold;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   padding: 18px;
   margin-left: 20px;
   
@@ -67,7 +67,7 @@
 .accordion__text {
   font-family: "Courier New";
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   padding: 18px;
   word-wrap: break-word;
 }

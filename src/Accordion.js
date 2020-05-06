@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import "./accordion.css";
 import Chevron from './Chevron';
 import Arrow from './Arrow';
+import { Link } from 'react-router-dom'
+
 // import Accordion from 'react-bootstrap/Accordion';
 
 const Accordion = (props) => {
@@ -19,6 +21,7 @@ const Accordion = (props) => {
             setActive === "active" ? "accordion__icon" : "accordion__icon rotate"
         );
     };
+
 
     return (
         <div>
@@ -43,6 +46,7 @@ const Accordion = (props) => {
                     </div>
                         <Arrow/>
                         <button onClick={() => props.deletePost(props.id)} >Delete </button>
+                        {/* <Link to="/new" header={props.header} >Edit</Link> */}
                 </div>
             </div>
         </div>

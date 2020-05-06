@@ -20,7 +20,7 @@ class Login extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        // this.props.history.push('/');
+        this.props.history.push('/new');
         fetch('http://localhost:4000/users', {
           method: "POST",
           headers: {
@@ -30,7 +30,7 @@ class Login extends React.Component {
           body: JSON.stringify(this.state)
         })
         .then(resp => resp.json())
-        .then(user => window.alert("It's Britney bitch."));
+        .then(user => window.alert("I am Beyonce, always."));
         //   event.target.reset();
         // console.log(this.state)
     };
@@ -45,7 +45,7 @@ class Login extends React.Component {
               <input type="text" id="name" placeholder="I am Beyonce, always." value={this.state.name} onChange={this.handleChange} maxLength="50" required />
               <label htmlFor="password">Your Password:</label>
               <input type="password" id="password" placeholder="It's Britney bitch." value={this.state.password} onChange={this.handleChange}  maxLength="50" required />
-              <button redirect to='/' >Login</button>
+              <button redirect to='/new' >Login</button>
             </form>
           </div>
         )

@@ -23,7 +23,6 @@ class New extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        this.props.history.push('/');
         fetch('http://localhost:4000/posts', {
           method: "POST",
           headers: {
@@ -34,6 +33,7 @@ class New extends React.Component {
         })
         .then(resp => resp.json())
         .then(post => {console.log(post)});
+        this.props.history.push('/');
         //   event.target.reset();
         // console.log(this.state)
     };

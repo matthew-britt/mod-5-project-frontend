@@ -13,7 +13,7 @@ class Nav extends React.Component {
                 <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/login">Login</Link>|
 
 
-                <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/new">New Post</Link>|
+                <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/new">New Story</Link>|
 
 
                 <Link style={{ color: '#FFF', textDecoration: 'none' }} to="/history">History</Link>

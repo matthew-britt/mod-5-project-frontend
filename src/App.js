@@ -18,7 +18,7 @@ class App extends React.Component {
         </div>
           
         <Nav />
-        {/* <Menu /> */}
+       
         <Header />
         <Switch>
           <Route exact path="/" component={Home}/>

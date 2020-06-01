@@ -17,33 +17,33 @@ class Home extends React.Component {
     fetchPosts = () => {
         fetch('http://localhost:4000/posts')
             .then(resp => resp.json())
-            .then(posts => this.setState({posts}))
+            .then(posts => this.setState({ posts }))
     };
 
     // componentDidUpdate() {
     //     event.preventDefault();
     //     this.deletePost();
-        
+
     // };
 
     deletePost = (postId) => {
         fetch(`http://localhost:4000/posts/${postId}`, {
-          method: 'DELETE',
+            method: 'DELETE',
         })
-          .then((resp) => resp.json())
-          .then((resp) => {
-              this.fetchPosts();
-          });
+            .then((resp) => resp.json())
+            .then((resp) => {
+                this.fetchPosts();
+            });
         //   let newPosts = this.state.posts;
         //   this.setState({posts: newPosts});
-          
 
-      };
+
+    };
 
     render() {
         return (
             <div>
-                {this.state.posts.map (post => <Accordion header={post.header} story={post.story} id={post.id} username={post.username} deletePost={this.deletePost}/> )}
+                {this.state.posts.map(post => <Accordion header={post.header} story={post.story} id={post.id} username={post.username} deletePost={this.deletePost} />)}
             </div>
         )
     };
